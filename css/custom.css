@@ -1,0 +1,9 @@
+.main-header {
+    background: #f8e71c;
+    height: 84px;
+    min-height: 69px;
+    min-width: 1000px;
+    border-bottom: 5px solid #343436;
+    box-shadow: 0 1px 1px black;
+    position: relative;
+}
