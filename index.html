@@ -8,6 +8,7 @@
   <title>SAM - New Zealand Virtual Politician</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <script src="js/script.js"></script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -39,12 +40,30 @@
 
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
+      <button class="superbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
+        <img src = "images/sameyeslarge.png"/>
+        <p>WHO IS</p>
+        <img ID="whoissamroll" src="images/whoissam1.png"/>
+      </button>
     </div>
-  </div>
+    <div class="row">
+
+      <div class="one-half column">
+        <button class="subbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
+          <p>Hello New Zealand. I'm SAM.</p>
+        </button>
+      </div>
+      <div class="one-half column">
+        <button class="subbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
+          <p>My goal is to engage New Zealanders in constructive dialogue, working to better understand and represent your views in order to achieve the things we all care about.</p>
+        </button>
+      </div>
+
+      <button onclick="myFunction()">Click Me</button>
+
+      <div id="myDIV">
+        This is my DIV element.
+      </div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

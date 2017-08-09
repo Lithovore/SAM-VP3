@@ -6,4 +6,43 @@
     border-bottom: 5px solid #343436;
     box-shadow: 0 1px 1px black;
     position: relative;
+    margin-bottom: 10px;
+}
+
+.whoissam {
+    background: #f8e71c;
+}
+
+.superbutton {
+height:460px;
+width:100%;border-radius: 0px;
+border: 0px;
+background-color:#f8e71c;
+transition-duration: 0.5s;
+font-size: 80px;
+font-weight: 750;
+text-outline: 2px 2px #000000;
+color: white;
+}
+
+.subbutton {
+height:460px;
+width:100%;border-radius: 0px;
+border: 0px;
+background-color:#f8e71c;
+transition-duration: 0.5s;
+font-size: 80px;
+font-weight: 750;
+text-outline: 2px 2px #000000;
+color: white;
+white-space: normal;
+line-height: normal;
+}
+
+.floatleft{
+  float: left;
+}
+
+.floatright{
+  float: right;
 }
