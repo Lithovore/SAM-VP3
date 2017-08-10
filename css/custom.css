@@ -1,3 +1,5 @@
+/* DIVS */
+
 .main-header {
     background: #f8e71c;
     height: 84px;
@@ -13,36 +15,62 @@
     background: #f8e71c;
 }
 
+.twelve.columns{
+    background: #f8e71c;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    transition-duration: 0.5s;
+}
+
+/* BUTTONS */
+
+.navbutton{
+  margin-top: 24px;
+  float: right;
+  border: 0px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: black;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+}
+.navbutton:hover{
+  color: white;
+}
+
 .superbutton {
-height:460px;
-width:100%;border-radius: 0px;
-border: 0px;
-background-color:#f8e71c;
-transition-duration: 0.5s;
-font-size: 80px;
-font-weight: 750;
-text-outline: 2px 2px #000000;
-color: white;
+    height:460px;
+    width:100%;border-radius: 0px;
+    border: 0px;
+    background-color:#f8e71c;
+    transition-duration: 0.5s;
+    font-size: 80px;
+    font-weight: 750;
+    color: white;
 }
 
 .subbutton {
-height:460px;
-width:100%;border-radius: 0px;
-border: 0px;
-background-color:#f8e71c;
-transition-duration: 0.5s;
-font-size: 80px;
-font-weight: 750;
-text-outline: 2px 2px #000000;
-color: white;
-white-space: normal;
-line-height: normal;
+    height:460px;
+    width:100%;border-radius: 0px;
+    border: 0px;
+    background-color:#f8e71c;
+    transition-duration: 0.5s;
+    font-size: 80px;
+    font-weight: 750;
+    text-outline: 2px 2px #000000;
+    color: white;
+    white-space: normal;
+    line-height: normal;
 }
 
-.floatleft{
-  float: left;
-}
+/* IMAGES */
 
-.floatright{
-  float: right;
+#logoimg{
+  margin-top:25px;
+  margin-left: 25px;
+  max-width:40%;
+  max-height:40%;
 }
