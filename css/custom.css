@@ -50,7 +50,7 @@
     font-size: 80px;
     font-weight: 750;
     color: white;
-    
+
 }
 
 .subbutton {
@@ -65,6 +65,8 @@
     color: white;
     white-space: normal;
     line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 /* IMAGES */
