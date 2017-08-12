@@ -1,5 +1,47 @@
 /* DIVS */
 
+.wrapper{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min width 550px){
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr );
+    grid-template-rows: repeat(5, [row] auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 15px;
+}
+
+.box2x2a{
+    grid-column: col / span 6;
+    grid-row: row / span 6;
+    background-color: grey;
+}
+
+.box2x1a{
+    grid-column: col / span 6;
+    grid-row: row / span 3;
+    background-color: grey;
+
+}
+
+.box2x2b{
+    grid-column: col / span 6;
+    grid-row: row / span 6;
+    background-color: grey;
+}
+
+.box2x1b{
+    grid-column: col / span 6;
+    grid-row: row / span 3;
+    background-color: grey;
+}
+
+}
 .main-header {
     background: #f8e71c;
     height: 84px;
@@ -18,9 +60,16 @@
 .twelve.columns{
     background: #f8e71c;
     text-align: center;
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 58px;
+    font-weight: 700;
     transition-duration: 0.5s;
+    margin-bottom: 10px;
+}
+
+.twelve.columns img{
+  margin-bottom: -50px;
+  max-width:40%;
+  max-height:40%;
 }
 
 /* BUTTONS */
@@ -52,8 +101,22 @@
     color: white;
 }
 
-.subbutton {
+.sqbutton {
     height:460px;
+    width:100%;border-radius: 0px;
+    border: 0px;
+    background-color:#f8e71c;
+    transition-duration: 0.5s;
+    font-size: 80px;
+    font-weight: 750;
+    text-outline: 2px 2px #000000;
+    color: white;
+    white-space: normal;
+    line-height: normal;
+}
+
+.recbutton {
+    height:225px;
     width:100%;border-radius: 0px;
     border: 0px;
     background-color:#f8e71c;
@@ -73,4 +136,15 @@
   margin-left: 25px;
   max-width:40%;
   max-height:40%;
+}
+
+/* SPANS */
+
+.greentext{
+  color: green;
+}
+/* IDs */
+
+#iamsam{
+  display: none;
 }
