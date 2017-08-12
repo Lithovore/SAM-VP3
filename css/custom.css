@@ -1,75 +1,15 @@
 /* DIVS */
 
-
-/* CSS functions for general use */
-.spacer
-{
-    width: 100%;
-    height: 95px;
-}
-
-
-
-/* CSS functions for the wrappy box thing */
-.wrapper{
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-@media (min width 550px){
-
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(12, [col] 1fr );
-    grid-template-rows: repeat(5, [row] auto);
-    grid-column-gap: 1em;
-    grid-row-gap: 15px;
-}
-
-.box2x2a{
-    grid-column: col / span 6;
-    grid-row: row / span 6;
-    background-color: grey;
-}
-
-.box2x1a{
-    grid-column: col / span 6;
-    grid-row: row / span 3;
-    background-color: grey;
-
-}
-
-.box2x2b{
-    grid-column: col / span 6;
-    grid-row: row / span 6;
-    background-color: grey;
-}
-
-.box2x1b{
-    grid-column: col / span 6;
-    grid-row: row / span 3;
-    background-color: grey;
-}
-
-}
-
-/*CSS functions for the fixed header */
 .main-header {
     background: #f8e71c;
     height: 84px;
-    min-width: 100%;
+    min-height: 69px;
+    min-width: 1000px;
     border-bottom: 5px solid #343436;
     box-shadow: 0 1px 1px black;
     position: relative;
     margin-bottom: 10px;
-    position: fixed;
-    top: 0px;
-    z-index: +1;
 }
-
-
-
 
 .whoissam {
     background: #f8e71c;
@@ -108,6 +48,22 @@
   color: white;
 }
 
+.startbutton {
+    height:460px;
+    width:100%;border-radius: 0px;
+    border: 0px;
+    background-color:#f8e71c;
+    transition-duration: 0.5s;
+    font-size: 80px;
+    font-weight: 750;
+    color: white;
+}
+
+.startbutton img{
+  max-width:100%;
+  max-height:100%;
+}
+
 .superbutton {
     height:460px;
     width:100%;border-radius: 0px;
@@ -117,7 +73,16 @@
     font-size: 80px;
     font-weight: 750;
     color: white;
+}
 
+.superbutton p{
+    font-size: 4vw;
+    line-height: normal;
+}
+
+.superbutton img{
+  max-width:40%;
+  max-height:40%;
 }
 
 .sqbutton {
@@ -132,9 +97,6 @@
     color: white;
     white-space: normal;
     line-height: normal;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    float: right;
 }
 
 .recbutton {
@@ -165,8 +127,12 @@
 .greentext{
   color: green;
 }
-/* IDs */
 
-#iamsam{
-  display: none;
+.blacktext{
+  color: black;
+  font-size: 5vw;
+}
+
+.blacktext:hover{
+    color:white;
 }

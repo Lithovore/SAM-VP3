@@ -20,10 +20,9 @@
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,7 +35,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <header class = "main-header">
   <a href="#">
-    <img ID="logoimg" src = "images/sam_v3.png">
+    <img ID="logoimg" src = "images/sam_v3.png" onclick="start()">
   </a>
 
   <button class="navbutton" type="button" value="Register">Register</button>
@@ -47,74 +46,54 @@
 
 </header>
 
-<div class="spacer">
-    &nbsp;
-</div>
-
     <div class="row">
-      <button class="superbutton" id="whoissam" type="button" value="WHO IS SAM?" onclick="whoissam()" onmouseover="rollover()" onmouseout="mouseaway()">
+      <button class="startbutton" id="whoissam" type="button" onclick="intro()" onmouseover="rollover()" onmouseout="mouseaway()">
         <img src = "images/sameyeslarge.png"/>
         <p>WHO IS</p>
         <img ID="whoissamroll" src="images/whoissam1.png"/>
       </button>
 
-    </div>
-  <div class="container">
-    <div class="row" id="iamsam" display:none>
-      <div class="twelve columns">
+      <button class="superbutton" id="intro1" type="button" onclick="intro()">
         <img src = "images/sameyeslarge.png"/>
-        <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.</p>
-      </div>
+        <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.<br/>The world's first virtual politician.</p>
+      </button>
+
+      <button class="superbutton" id="intro2" type="button" onclick="intro()">
+        <img src = "images/sameyeslarge.png"/>
+        <p>My goal is to understand and represent <span class="blacktext">your views</span></br>to achieve the things we all care about.</p>
+      </button>
+
     </div>
+
+  <div class="container">
+
     <div class="row">
       <div class="one-half column">
-        <button class="sqbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
-          <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.</p>
-        </button>
-      </div>
-      <div class="one-half column">
-        <button class="recbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
-          <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.</p>
+        <button class="sqbutton" type="button" onclick="startchat()" onmouseover="rollover()" onmouseout="mouseaway()">
+          <p>Talk to SAM</p>
         </button>
       </div>
 
       <div class="one-half column">
-        <button class="recbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
-          <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.</p>
+        <button class="sqbutton" type="button" onclick="survey()" onmouseover="rollover()" onmouseout="mouseaway()">
+          <p>Your views</p>
         </button>
       </div>
     </div>
+
     <div class="row">
       <div class="one-half column">
-        <button class="recbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
-          <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.</p>
-        </button>
-        <button class="recbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
-          <p>Hello <span class="greentext">New Zealand</span>. I'm SAM.</p>
+        <button class="sqbutton" type="button" onclick="policies()" onmouseover="rollover()" onmouseout="mouseaway()">
+          <p>Policies</p>
         </button>
       </div>
+
       <div class="one-half column">
-        <button class="sqbutton" type="button" value="WHO IS SAM?" onclick="myFunction()" onmouseover="rollover()" onmouseout="mouseaway()">
-          <p>My goal is to engage New Zealanders in constructive dialogue, working to better understand and represent your views in order to achieve the things we all care about.</p>
+        <button class="sqbutton" type="button" onclick="news()" onmouseover="rollover()" onmouseout="mouseaway()">
+          <p>News</p>
         </button>
       </div>
     </div>
-
-
-  <div class="wrapper skeleton">
-    <div class="box2x2a">
-      <p>2x2a</p>
-    </div>
-    <div class="box2x1a">
-      <p>2x1a</p>
-    </div>
-    <div class="box2x2b">
-      <p>2x2b</p>
-    </div>
-    <div class="box2x1b">
-      <p>2x1b</p>
-    </div>
-  </div>
 
   </div>
 <!-- End Document
