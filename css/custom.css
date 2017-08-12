@@ -1,5 +1,16 @@
 /* DIVS */
 
+
+/* CSS functions for general use */
+.spacer
+{
+    width: 100%;
+    height: 95px;
+}
+
+
+
+/* CSS functions for the wrappy box thing */
 .wrapper{
   width: 100%;
   max-width: 960px;
@@ -42,16 +53,23 @@
 }
 
 }
+
+/*CSS functions for the fixed header */
 .main-header {
     background: #f8e71c;
     height: 84px;
-    min-height: 69px;
-    min-width: 1000px;
+    min-width: 100%;
     border-bottom: 5px solid #343436;
     box-shadow: 0 1px 1px black;
     position: relative;
     margin-bottom: 10px;
+    position: fixed;
+    top: 0px;
+    z-index: +1;
 }
+
+
+
 
 .whoissam {
     background: #f8e71c;
