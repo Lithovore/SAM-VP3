@@ -22,19 +22,27 @@ function intro() {
 */
 
 function intro() {
-    var x = document.getElementById('whoissam');
+   var x = document.getElementById('whoissam');
     var y = document.getElementById('intro1');
     var z = document.getElementById('intro2');
 
-    if (x.style.display = 'block') {
+    if (x.style.display === 'block') {
         x.style.display = 'none';
         y.style.display = 'block';
+
     }
-    else if (y.style.display = 'block') {
+    else if (y.style.display === 'block') {
         y.style.display = 'none';
         z.style.display = 'block';
     }
 
+  //switch (true) {
+  //  case x.style.display ==:
+
+    //  break;
+  //  default:
+
+//  }
 
 }
 
