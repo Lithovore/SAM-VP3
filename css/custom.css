@@ -11,6 +11,20 @@
     margin-bottom: 10px;
 }
 
+.footer{
+  background: #f8e71c;
+  min-height: 69px;
+  min-width: 1000px;
+  border-top: 5px solid #343436;
+  box-shadow: 0 1px 1px black;
+  clear: both;
+  position: relative;
+  z-index: 10;
+  height: 3em;
+  margin-top: 10px;
+}
+
+
 .whoissam {
     background: #f8e71c;
 }
@@ -76,6 +90,7 @@
     color: white;
 }
 
+
 .superbuttonFinal {
     height:460px;
     width:100%;border-radius: 0px;
@@ -105,6 +120,12 @@
 .superbuttonFinal img{
   max-width:100%;
   max-height:100%;
+}
+
+#containerSqButtons {
+  display: none;
+  width: 960px;
+  margin: 0 auto;
 }
 
 .sqbutton {

@@ -8,6 +8,7 @@ window.onload=function start(){
     document.getElementById('intro6').style.display = 'none';
     document.getElementById('intro7').style.display = 'none';
     document.getElementById('introFinal').style.display = 'none';
+
 }
 /*
 function intro() {
@@ -26,6 +27,60 @@ function intro() {
         y.style.display = 'none';
     }
 */
+
+function skipIntro(){
+  var slideOne = document.getElementById('whoissam');
+  var slideTwo = document.getElementById('intro1');
+  var slideThree = document.getElementById('intro2');
+  var slideFour = document.getElementById('intro3');
+  var slideFive = document.getElementById('intro4')
+  var slideSix = document.getElementById('intro5')
+  var slideSeven = document.getElementById('intro6')
+  var slideEight = document.getElementById('intro7')
+  var slideFinal = document.getElementById('introFinal')
+
+  if (slideOne.style.display === 'block') {
+      slideOne.style.display = 'none';
+      slideFinal.style.display = 'block';
+      document.getElementById("containerSqButtons").style.display = "block";
+
+  }
+  else if (slideTwo.style.display === 'block') {
+      slideTwo.style.display = 'none';
+      slideFinal.style.display = 'block';
+      document.getElementById("containerSqButtons").style.display = "block";
+  }
+  else if(slideThree.style.display === 'block'){
+      slideThree.style.display = 'none';
+      slideFinal.style.display = 'block';
+      document.getElementById("containerSqButtons").style.display = "block";
+  }
+  else if(slideFour.style.display === 'block'){
+    slideFour.style.display = 'none';
+    slideFinal.style.display = 'block';
+    document.getElementById("containerSqButtons").style.display = "block";
+  }
+  else if(slideFive.style.display === 'block'){
+    slideFive.style.display = 'none';
+    slideFinal.style.display = 'block';
+    document.getElementById("containerSqButtons").style.display = "block";
+  }
+  else if(slideSix.style.display === 'block'){
+    slideSix.style.display = 'none';
+    slideFinal.style.display = 'block';
+    document.getElementById("containerSqButtons").style.display = "block";
+  }
+  else if(slideSeven.style.display === 'block'){
+    slideSeven.style.display = 'none';
+    slideFinal.style.display = 'block';
+    document.getElementById("containerSqButtons").style.display = "block";
+  }
+  else if(slideEight.style.display === 'block'){
+    slideEight.style.display = 'none';
+    slideFinal.style.display = 'block';
+    document.getElementById("containerSqButtons").style.display = "block";
+  }
+}
 
 function intro() {
     var slideOne = document.getElementById('whoissam');
@@ -70,6 +125,7 @@ function intro() {
     else if(slideEight.style.display === 'block'){
       slideEight.style.display = 'none';
       slideFinal.style.display = 'block';
+      document.getElementById("containerSqButtons").style.display = "block";
     }
 
   //switch (true) {
